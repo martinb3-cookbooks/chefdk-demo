@@ -1,0 +1,26 @@
+---
+driver:
+  name: vagrant # provide a default test-kitchen driver, vagrant
+
+driver_config:
+  require_chef_omnibus: true # or we can't install chef-dk with this recipe
+
+platforms:
+  - name: ubuntu-14.04
+    run_list:
+    - recipe[apt]
+  - name: centos-6.5
+    run_list:
+    - recipe[yum]
+
+suites:
+  - name: default
+    run_list: recipe[chefdk-demo]
+    attributes:
+      foo: 'bar'
+
+  - name: rvm
+    run_list: recipe[chefdk-demo::rvm]
+
+  - name: rbenv
+    run_list: recipe[chefdk-demo::rbenv]
