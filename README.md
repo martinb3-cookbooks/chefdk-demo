@@ -40,7 +40,7 @@ rvm use 2.1.2
 
 ## Recipes
 
-### Default
+### default
 
 Simply pulls down a package for chef-dk and installs it. You will need a
 test-kitchen provisioner or something else to install chef first, as chef is
