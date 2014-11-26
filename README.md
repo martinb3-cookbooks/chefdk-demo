@@ -1,5 +1,11 @@
 # chefdk-demo
 
+[Chef Development Kit](https://downloads.getchef.com/chef-dk/) (ChefDK) is, "a
+streamlined development and deployment workflow for Chef platform. [ChefDK]
+brings the best-of-breed development tools built by the awesome Chef community
+to your workstation with just a few clicks." [(source)](https://downloads.getchef.com/chef-dk/)
+You can also find out more by visiting the Github repository at  [opscode/chef-dk](https://github.com/opscode/chef-dk).
+
 This project is intended to be a demo of chef-dk features, as well as trying to
 show how it might be integrated with rvm or rbenv. See the test directory for
 serverspec tests that demonstrate how a shell can be activated for use with
