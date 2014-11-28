@@ -15,12 +15,16 @@ platforms:
 
 suites:
   - name: default
-    run_list: recipe[chefdk-demo]
+    run_list:
+      - recipe[chefdk-demo]
+      - recipe[chefdk-demo::generator]
     attributes:
       foo: 'bar'
 
   - name: rvm
-    run_list: recipe[chefdk-demo::rvm]
+    run_list:
+      - recipe[chefdk-demo::rvm]
 
   - name: rbenv
-    run_list: recipe[chefdk-demo::rbenv]
+    run_list:
+      - recipe[chefdk-demo::rbenv]

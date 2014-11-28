@@ -42,11 +42,9 @@ rvm use 2.1.2
 
 ### default
 
-Simply pulls down a package for chef-dk and installs it. You will need a
-test-kitchen provisioner or something else to install chef first, as chef is
-required to converge this cookbook at all.
-
-It doesn't matter if you use the chef omnibus installer or not.
+Calls upstream chef-dk cookbook to install chef-dk. You will need a test-kitchen
+provisioner or something else to install chef first, as chef is required to
+converge this cookbook at all.
 
 ### rbenv
 
