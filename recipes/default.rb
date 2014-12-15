@@ -2,4 +2,4 @@
 include_recipe 'chef-dk'
 
 # for demo data in other recipes
-directory '/opt/demo'
+directory node['chefdk-demo']['base_dir']
